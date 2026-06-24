@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Internship Assessment — Task Showcase</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#top" class="brand">Assessment<span class="brand-accent">.Lab</span></a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#task-1">Task 1</a></li>
+          <li><a href="#task-2">Task 2</a></li>
+          <li><a href="#task-3">Task 3</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <h1>Three tasks. One vanilla stack.</h1>
+      <p>HTML, CSS, and JavaScript only — no frameworks, no shortcuts.</p>
+    </section>
+
+
+    <h1>Task 1</h1>
+    <section id="task-1" class="task-section privileges-section">
+      <div class="privileges-wrap">
+        <h2 class="privileges-title">Exclusive Privileges</h2>
+
+        <div class="coverflow" id="coverflow">
+          <button class="cf-arrow cf-prev" id="cfPrev" aria-label="Previous slide">&#8249;</button>
+
+          <div class="cf-viewport">
+            <div class="cf-track" id="cfTrack">
+
+              <div class="cf-slide" data-index="0">
+                <div class="slide-card card-muted card-ixigo">
+                  <p class="eyebrow">Get</p>
+                  <h3 class="headline">Activation Voucher</h3>
+                  <p class="sub">with<br>Flat &#8377;1,200/- off.</p>
+                  <div class="brand-logo logo-ixigo">ixigo</div>
+                </div>
+              </div>
+
+              <div class="cf-slide" data-index="1">
+                <div class="slide-card card-muted card-reliance">
+                  <p class="eyebrow">Get</p>
+                  <h3 class="headline">Activation Voucher</h3>
+                  <p class="sub">with up to<br>&#8377;1,500/- off*.</p>
+                  <div class="brand-logo logo-reliance">Reliance<span>digital</span></div>
+                </div>
+              </div>
+
+              <div class="cf-slide" data-index="2">
+                <div class="slide-card card-feature card-bms">
+                  <h3 class="headline-feature">Enjoy Benefits</h3>
+                  <p class="sub-feature">worth up to<br>&#8377;500/- off*<br>on your tickets.</p>
+                  <div class="brand-logo logo-bms">book<span>my</span>show</div>
+                  <em class="fine-print">*available on selected cards</em>
+                </div>
+              </div>
+
+              <div class="cf-slide" data-index="3">
+                <div class="slide-card card-muted card-apple">
+                  <p class="eyebrow">Avail</p>
+                  <h3 class="headline">Apple Offer</h3>
+                  <p class="sub">with up to<br>&#8377;7,000/- off</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <button class="cf-arrow cf-next" id="cfNext" aria-label="Next slide">&#8250;</button>
+
+          <div class="cf-pagination" id="cfPagination" role="tablist" aria-label="Slide selection"></div>
+        </div>
+      </div>
+    </section>
+<!-----------------------------------------Task 1 Completed ----------->
+      <h2>Task 2</h2>
+     
+      <section id="task-2">
+
+    <h2>Video Chapters</h2>
+
+    <div class="video-list">
+
+        <button onclick="loadVideo('RJTCAL1DRro',video1)">
+            Video 1
+        </button>
+
+        <button onclick="loadVideo('jj_aUFX8SV8',video2)">
+            Video 2
+        </button>
+
+        <button onclick="loadVideo('xmmxkmVSiq0',video3)">
+            Video 3
+        </button>
+
+    </div>
+
+    <iframe
+    id="youtubePlayer"
+    width="100%"
+    height="500"
+    src=""
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+</iframe>
+
+    <div id="chapters"></div>
+
+</section>
+
+
+
+<!------------------------------Task 2------------------------>
+    
+<h1>Task 3</h1>
+   
+<div class="video-container">
+
+    <div id="videoOverlay" class="video-overlay"></div>
+
+    <iframe
+        id="youtubeVideo"
+        src="https://www.youtube.com/embed/RJTCAL1DRro"
+        allowfullscreen>
+    </iframe>
+
+</div>
+
+    <div id="leadModal" class="lead-modal">
+
+        <div class="lead-content">
+
+            <button id="closeModal" class="close-btn">
+                &times;
+            </button>
+
+            <h3>Interested?</h3>
+
+            <p>Fill your details below.</p>
+
+            <form id="leadForm">
+
+                <input
+                    type="text"
+                    placeholder="Full Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Email Address"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    required
+                >
+
+                <button type="submit">
+                    Submit
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+  </main>
+<!------------------------------------------Task 3------------------------------------------->
+  <footer class="site-footer">
+    <p>&copy; 2026 Internship Assessment Submission.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
